@@ -39,8 +39,8 @@ function setBtnAsActive() {
 //filter function to show projects by type
 function filter(e, class_name) {
   e.preventDefault();
-  console.log("filter " + class_name);
   const projects = portfolio.querySelectorAll("div.img_col");
+  
   for (const project of projects) {
     if (project.classList.contains(class_name)) {
       project.style.display = "block";
