@@ -62,33 +62,26 @@ const onSubmitHendler = async (e) => {
 };
 
 async function sendEmail(
-  fromEmail,
+  email,
   name = "no name",
   subject = `no subject`,
-  text = "no text",
+  message = "no text",
   html = "<h2>No html...</h2>"
 ) {
-  const SENDGRID_API_HOST = "https://api.sendgrid.com/v3/mail/send";
-  SENDGRID_API_KEY = getApiKey()
-  const json_data = `{
-        "personalizations":[{
-            "to":[{"email":"madombrovsky@gmail.com","name":"Michael Dombrovsky"}],
-            "subject":"${subject}"
-        }],
-        "content": [{"type": "text/plain", "value": "${text}"}],
-        "from":{"email":"${fromEmail}","name":"${name}"},
-        "reply_to":{"email":"${fromEmail}","name":"${name}"}
-    }`;
-
   try {
-    const resp = await fetch(SENDGRID_API_HOST, {
+    const resp = await fetch("http://localhost:3000/email", {
       method: "POST",
       headers: {
-        Authorization: "Bearer " + SENDGRID_API_KEY,
+        // Authorization: "Bearer " + SENDGRID_API_KEY,
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*",
       },
-      data: json_data,
+      data: JSON.stringify({
+        subject,
+        message,
+        name,
+        email,
+        html,
+      }),
     });
 
     if (resp.ok) {
