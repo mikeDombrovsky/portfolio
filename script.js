@@ -1,5 +1,3 @@
-
-
 //add listeners to nav btns for active status
 const main_btns_container = document.querySelector(
   "#navbarSupportedContent>ul"
@@ -40,7 +38,7 @@ function setBtnAsActive() {
 function filter(e, class_name) {
   e.preventDefault();
   const projects = portfolio.querySelectorAll("div.img_col");
-  
+
   for (const project of projects) {
     if (project.classList.contains(class_name)) {
       project.style.display = "block";
@@ -72,7 +70,6 @@ async function sendEmail(
     const resp = await fetch("http://localhost:3000/email", {
       method: "POST",
       headers: {
-        // Authorization: "Bearer " + SENDGRID_API_KEY,
         "Content-Type": "application/json",
       },
       data: JSON.stringify({
@@ -85,14 +82,13 @@ async function sendEmail(
     });
 
     if (resp.ok) {
-      console.log("Email sent!");
+      alert("Your message sent, thanks!");
     } else {
+      alert("Oops, something went wrong... =O");
       console.log(resp);
     }
   } catch (err) {
     console.log(err);
+    alert("Oops, something went wrong..");
   }
 }
-
-
-
