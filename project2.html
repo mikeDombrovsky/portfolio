@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="projects.css" />
+    <title>Project 2</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <div class="me-auto">
+          <a class="navbar-brand" href="./index.html">Home</a>
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="#about" class="nav-link active" aria-current="page"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="./index.html#portfolio" class="nav-link">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="./index.html#contacts" class="nav-link">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="socials fixed_socials">
+      <a href="https://github.com/mikeDombrovsky">
+        <i class="bi bi-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/mikedombrovsky/">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=100003384275985">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="https://wa.me/972586907459">
+        <i class="bi bi-whatsapp"></i>
+      </a>
+    </div>
+
+    <header>
+      <div class="overlay">
+        <div class="wrapper d-flex flex-column align-items-center">
+          <div>
+            <h1>"Talk to me" project</h1>
+            <hr />
+            <p class="fs-5">
+              This project was created during the time of Hamas attack to Israeli civilians. 
+              The main idea was to build a place where people with an anxiety may have a talk with people 
+              that want to help to cope with this feelings through talking.
+            </p>
+            <hr />
+            <div id="carouselExample" class="carousel slide carousel-dark">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./images/portfolio/talk_to_me_main.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./images/portfolio/talk_to_me_register.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./images/portfolio/talk_to_me_login.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./images/portfolio/talk_to_me_profile.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./images/portfolio/talk_to_me_talktomes.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./images/portfolio/talk_to_me_ihearyous.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <hr>
+          <h4 class="align-self-start"><b>Tools used</b></h4>
+          <div class="tools">
+            <div class="tool">NodeJS</div>
+            <div class="tool">Express</div>
+            <div class="tool">PostgreSQL</div>
+            <div class="tool">JWT</div>
+            <div class="tool">JavaScript</div>
+            <div class="tool">React</div>
+            <div class="tool">Bootstrap</div>
+            <div class="tool">HTML</div>
+            <div class="tool">CSS</div>
+          </div>
+
+          <h4 class="align-self-start"><b>See live</b></h4>
+
+          <div class="align-self-start pb-4">
+            <a
+              href="https://talktome-7yh9.onrender.com/"
+              target="_blank"
+              class="btn btn-primary btn-lg me-2"
+              >Live link</a
+            >
+            <a
+              href="https://github.com/mikeDombrovsky/talktome"
+              target="_blank"
+              class="btn btn-outline-primary btn-lg me-2"
+              >Server code</a
+            >
+            <a
+              href="https://github.com/mikeDombrovsky/talktome/tree/main/client"
+              target="_blank"
+              class="btn btn-outline-primary btn-lg me-2"
+              >Client code</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="env.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

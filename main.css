@@ -21,6 +21,7 @@ a {
     max-width: 860px;
     margin: 0 auto;
     height: inherit;
+    padding: 80px;
 }
 
 body {
@@ -44,7 +45,16 @@ header {
     /* Specify a stack order in case you're using a different order for other elements */
 }
 
+.fixed_socials{
+    position: fixed;
+    top:calc(100vh / 3);
+    left:20px;
+    display: flex;
+    flex-direction: column;
+}
+
 .hello_block {
+    
     padding: 15px;
     border-radius: 20px;
 }
@@ -102,10 +112,11 @@ section.blog .card img {
     object-fit: cover;
 }
 
-section.contacts .icons{
+section.contacts .socials{
     text-align: center;
 }
 
-section.contacts i{
+.socials i{
     font-size: 3em;
 }
+
