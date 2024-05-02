@@ -4,14 +4,14 @@ const main_btns_container = document.querySelector(
 );
 const main_btns = main_btns_container.querySelectorAll("li.nav-item>a");
 
-addListenersToBtns(main_btns, setMainBtnAsActive);
+addListenersToBtns(main_btns, setNavBtnAsActive);
 
 //add listeners to portfolio btns for active status
 const portfolio = document.querySelector("section#portfolio");
-const btnContainer = portfolio.querySelector("div.navbar-nav");
+const portfolio_btns_container = portfolio.querySelector("div.navbar-nav");
 const btns = portfolio.querySelectorAll("div.navbar-nav>a");
 
-addListenersToBtns(btns, setBtnAsActive);
+addListenersToBtns(btns, setPortfolioBtnAsActive);
 
 // const sendEmilBtn = document.querySelector("form#email_form");
 
@@ -22,15 +22,15 @@ function addListenersToBtns(btns, func) {
 }
 
 //add class active to active main btn
-function setMainBtnAsActive() {
+function setNavBtnAsActive() {
   let prevActiveBtn = main_btns_container.querySelector(".active");
   prevActiveBtn.classList.remove("active");
   this.classList.add("active");
 }
 
 //add class activ to active portfolio btn
-function setBtnAsActive() {
-  let prevActiveBtn = btnContainer.querySelector(".active");
+function setPortfolioBtnAsActive() {
+  let prevActiveBtn = portfolio_btns_container.querySelector(".active");
   prevActiveBtn.classList.remove("active");
   this.classList.add("active");
 }
