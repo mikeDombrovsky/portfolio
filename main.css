@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url("https://fonts.googleapis.com/css?family=Raleway");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html,
@@ -14,110 +14,124 @@ h4,
 h5,
 h6,
 a {
-    font-family: "Raleway";
+  font-family: "Raleway";
 }
 
 .wrapper {
-    max-width: 860px;
-    margin: 0 auto;
-    height: inherit;
-    padding: 80px;
+  max-width: 860px;
+  margin: 0 auto;
+  height: inherit;
+  padding: 80px;
 }
 
 body {
-    background-color: #fdfcfc;
+  background-color: #fdfcfc;
 }
 
 header {
-    height: 100vh;
-    background-image: url('./images/headerback.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+  height: 100vh;
+  background-image: url("./images/headerback.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .overlay {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.7);
-    z-index: 1;
-    /* Specify a stack order in case you're using a different order for other elements */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 1;
+  /* Specify a stack order in case you're using a different order for other elements */
 }
 
-.fixed_socials{
-    position: fixed;
-    top:calc(100vh / 3);
-    left:20px;
-    display: flex;
-    flex-direction: column;
-    z-index: 2;
+.fixed_socials {
+  position: fixed;
+  top: calc(100vh / 3);
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
 }
 
 .hello_block {
-    
-    padding: 15px;
-    border-radius: 20px;
+  padding: 15px;
+  border-radius: 20px;
 }
 
 section.about_me {
-    min-height: 70vh;
+  min-height: 70vh;
 }
 
 section h2 {
-    text-align: center;
-    margin: 2em;
-    color: #0d6efd;
+  text-align: center;
+  margin: 2em;
+  color: #0d6efd;
 }
 
 section.about_me .about_me_left {
-    text-align: center;
+  text-align: center;
 }
 
 section.about_me .about_me_left img {
-    width: 100%;
-    border-radius: 50%;
-    margin-bottom: 0.5em;
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 0.5em;
 }
 
 section.about_me .about_me_text {
-    border-left: 3px solid rgb(236, 187, 122);
-    padding: 2em;
+  border-left: 3px solid rgb(236, 187, 122);
+  padding: 2em;
 }
 
 section.about_me .about_me_text h3 {
-    color: rgb(236, 187, 122);
+  color: rgb(236, 187, 122);
 }
 
 section.portfolio .img_col {
-    padding: 1em;
-    overflow: hidden;
-    transition: 0.5s;
+  padding: 1em;
+  overflow: hidden;
+  transition: 0.5s;
 }
 
 section.portfolio img {
-    height: 25vh;
-    width: 100%;
-    object-fit: cover;
-    border: 1px solid rgb(236, 187, 122);
+  height: 25vh;
+  width: 100%;
+  object-fit: cover;
+  border: 1px solid rgb(236, 187, 122);
 }
 
 section.portfolio .img_col:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
 section.blog .card img {
-    height: 25vh;
-    width: 100%;
-    object-fit: cover;
+  height: 25vh;
+  width: 100%;
+  object-fit: cover;
 }
 
-section.contacts .socials{
-    text-align: center;
+section.contacts .socials {
+  text-align: center;
 }
 
-.socials i{
-    font-size: 3em;
+.socials i {
+  font-size: 3em;
 }
 
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tools .tool {
+  padding: 0.6rem 1.1rem;
+  margin-bottom: 1.3rem;
+  margin-right: 1.3rem;
+  font-size: 1.1rem;
+  background: #428cfb;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #fff;
+}
