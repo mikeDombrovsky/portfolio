@@ -130,8 +130,8 @@ section.contacts .socials {
   margin-bottom: 1.3rem;
   margin-right: 1.3rem;
   font-size: 1.1rem;
-  background: #428cfb;
+  background: rgba(153, 153, 153, 0.2);
   border-radius: 5px;
   font-weight: 600;
-  color: #fff;
+  color: #777;
 }
