@@ -13,8 +13,6 @@ const btns = portfolio.querySelectorAll("div.navbar-nav>a");
 
 addListenersToBtns(btns, setPortfolioBtnAsActive);
 
-// const sendEmilBtn = document.querySelector("form#email_form");
-
 function addListenersToBtns(btns, func) {
   for (let i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", func);
@@ -50,7 +48,7 @@ function filter(e, class_name) {
 
 const onSubmitHendler = async (e) => {
   e.preventDefault();
-  console.log(e.target.subject);
+  
   sendEmail(
     e.target.email.value,
     e.target.name.value,
