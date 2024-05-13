@@ -60,14 +60,13 @@ const onSubmitHendler = async (e) => {
 };
 
 async function sendEmail(
-  email,
-  name = "no name",
   subject = `no subject`,
   message = "no text",
-  html = "<h2>No html...</h2>"
+  name = "no name",
+  email,
 ) {
   try {
-    const resp = await fetch("http://localhost:3000/email", {
+    const resp = await fetch("https://talktome-7yh9.onrender.com/api/emailer/send", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -77,7 +76,6 @@ async function sendEmail(
         message,
         name,
         email,
-        html,
       }),
     });
 
