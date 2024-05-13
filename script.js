@@ -48,28 +48,29 @@ function filter(e, class_name) {
 
 const onSubmitHendler = async (e) => {
   e.preventDefault();
-  
+  console.log(e.target);
   sendEmail(
-    e.target.email.value,
-    e.target.name.value,
     e.target.title.value,
-    e.target.text.value
+    e.target.text.value,
+    e.target.name.value,
+    e.target.email.value
   );
 };
 
 async function sendEmail(
-  subject = `no subject`,
+  subject = "no subject",
   message = "no text",
   name = "no name",
   email,
 ) {
+  console.log(subject, message, name, email);
   try {
     const resp = await fetch("https://talktome-7yh9.onrender.com/api/emailer/send", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      data: JSON.stringify({
+      body: JSON.stringify({
         subject,
         message,
         name,
