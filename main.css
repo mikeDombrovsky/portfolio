@@ -108,8 +108,26 @@ section.about_me .about_me_text h3 {
   color: rgb(236, 187, 122);
 }
 
+section.about_me .tools {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section.about_me .tools .tool {
+  padding: 0.6rem 1.1rem;
+  margin-bottom: 1.3rem;
+  margin-right: 1.3rem;
+  font-size: 1.1rem;
+  background: rgba(153, 153, 153, 0.2);
+  border-radius: 5px;
+  font-weight: 600;
+  color: #777;
+}
+
+
 section.portfolio{
   padding: 5em 0 15em 0;
+  background-color: rgba(153, 153, 153, 0.2);
 }
 
 section.portfolio .img_col {
@@ -136,36 +154,29 @@ section.blog .card img {
   object-fit: cover;
 }
 
-footer.contacts {
-  background-color: #0d6efd;
-  color: white;
+section.contacts {
+  background-color: white
+  color: #0d6efd;
 }
 
-footer.contacts .socials {
+footer{
+  background-color: #0d6efd;
+  color:white
+}
+
+footer .socials {
   text-align: center;
 }
+
+
 
 footer.contacts .socials .social i {
   font-size: 1.5em;
   color: white;
+  transition: 0.5s;
 }
 
-footer.contacts form#email_form{
-  
-}
-
-.tools {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.tools .tool {
-  padding: 0.6rem 1.1rem;
-  margin-bottom: 1.3rem;
-  margin-right: 1.3rem;
-  font-size: 1.1rem;
-  background: rgba(153, 153, 153, 0.2);
-  border-radius: 5px;
-  font-weight: 600;
-  color: #777;
+footer.contacts .socials .social i:hover {
+  color: rgb(236, 187, 122);
+  transition: color 0.5s;
 }
