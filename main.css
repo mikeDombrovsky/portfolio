@@ -80,6 +80,7 @@ header {
 
 section.about_me {
   min-height: 70vh;
+  padding: 5em 0 15em 0;
 }
 
 section h2 {
@@ -105,6 +106,10 @@ section.about_me .about_me_text {
 
 section.about_me .about_me_text h3 {
   color: rgb(236, 187, 122);
+}
+
+section.portfolio{
+  padding: 5em 0 15em 0;
 }
 
 section.portfolio .img_col {
