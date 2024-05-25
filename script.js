@@ -86,6 +86,6 @@ async function sendEmail(
     }
   } catch (err) {
     console.log(err);
-    alert("Oops, something went wrong..");
+    alert("Oops, something went wrong... =O");
   }
 }

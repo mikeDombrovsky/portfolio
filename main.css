@@ -48,9 +48,14 @@ header {
 .fixed_socials {
   position: fixed;
   top: calc(100vh / 3);
-  left: 20px;
+  left: -20px;
   display: flex;
   flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+  padding-left: 30px;
+  opacity: 0.8;
   z-index: 2;
 }
 
@@ -126,12 +131,22 @@ section.blog .card img {
   object-fit: cover;
 }
 
-section.contacts .socials {
+footer.contacts {
+  background-color: #0d6efd;
+  color: white;
+}
+
+footer.contacts .socials {
   text-align: center;
 }
 
-section.contacts .socials .social i {
+footer.contacts .socials .social i {
   font-size: 1.5em;
+  color: white;
+}
+
+footer.contacts form#email_form{
+  
 }
 
 .tools {
